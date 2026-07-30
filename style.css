@@ -15,7 +15,7 @@ body{
 
 /* Navbar*/
 .navbar{
-    height:70px;
+    height:72px;
     width:100%;
     background:#131921;
     color:white;
@@ -57,7 +57,7 @@ body{
     border:1.5px solid transparent;
     transition:.3s ease;
     padding:6px;
-    outline:1.5px solid white;
+    outline:1.5px solid transparent;
 
 }
 
@@ -96,7 +96,7 @@ body{
 
 .nav-search{
 
-    width:700px;
+    width:720px;
     height:42px;
     display:flex;
     border-radius:8px;
@@ -183,13 +183,13 @@ span{
     font-weight:700;
     cursor:pointer;
     transition:.3s;
-    transform:scale(1.08);
 
 }
 
 .nav-cart i{
 
     font-size:30px;
+    transform:scale(1.08);
 
 }
 
@@ -211,7 +211,7 @@ span{
     align-items:center;
     justify-content:space-evenly;
     position:sticky;
-    top:70px;
+    top:72px;
     z-index:999;
     box-shadow:0 2px 6px rgba(0,0,0,.15);
 
@@ -231,16 +231,18 @@ span{
 
 }
 
-.panel-ops p{
+.panel-ops a{
 
     display:inline-block;
     margin-left:18px;
+    text-decoration:none;
     cursor:pointer;
     transition:.3s;
+    color:white;
 
 }
 
-.panel-ops p:hover{
+.panel-ops a:hover{
 
     color:#febd69;
 
@@ -280,7 +282,7 @@ span{
 
 .hero-msg{
 
-    position:absolute;
+    position:relative;
     z-index:2;
     width:92%;
     height:48px;
@@ -316,10 +318,10 @@ span{
 
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-evenly;
+    justify-content:center;
     background:#eaeded;
     padding:20px 0 45px;
-    gap:20px;
+    gap: 24px;
 
 }
    
@@ -432,12 +434,13 @@ footer{
     min-height:410px;
     background:white;
     margin-top:22px;
-    border-radius:14px;
+    border-radius:16px;
     overflow:hidden;
     transition:.35s ease;
     cursor:pointer;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
     position:relative;
+
 }
 
 .box:hover{
@@ -458,7 +461,7 @@ footer{
 
 .box-content h2{
 
-    font-size:22px;
+    font: size 24px;
     color:#111;
     line-height:30px;
     margin-bottom:10px;
@@ -498,8 +501,18 @@ footer{
     color:#C7511F;
     padding-left:6px;
     text-decoration:underline;
-    animation:fade .7s ease;
 
+}
+
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:.6s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
 @keyframes fade{
