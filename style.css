@@ -189,7 +189,6 @@ span{
 .nav-cart i{
 
     font-size:30px;
-    transform:scale(1.08);
 
 }
 
@@ -257,11 +256,11 @@ span{
 /*HERO SECTION*/
 
 .hero-section{
-
     background-image:url("hero.jpg");
     background-size:cover;
-    background-position:center;
-    height:460px;
+    background-position:top center;
+    background-repeat:no-repeat;
+    height:300px;
     display:flex;
     justify-content:center;
     align-items:flex-end;
@@ -291,7 +290,7 @@ span{
     justify-content:center;
     align-items:center;
     border-radius:12px;
-    margin-bottom:30px;
+    margin-bottom: 60px;
     font-size:14px;
     box-shadow:0 10px 25px rgba(0,0,0,.18);
 
@@ -440,6 +439,7 @@ footer{
     cursor:pointer;
     box-shadow:0 8px 20px rgba(0,0,0,.1);
     position:relative;
+    animation:fade .7s ease;
 
 }
 
@@ -503,18 +503,6 @@ footer{
     text-decoration:underline;
 
 }
-
-.hidden{
-    opacity:0;
-    transform:translateY(40px);
-    transition:.6s ease;
-}
-
-.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
 @keyframes fade{
     from{
         opacity:0;
@@ -524,5 +512,5 @@ footer{
         opacity:1;
         transform:translateY(0);
     }
-
 }
+
