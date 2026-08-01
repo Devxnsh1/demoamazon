@@ -7,7 +7,7 @@ A modern Amazon homepage clone built using **HTML, CSS, and JavaScript**. This p
 ## Live Demo
 https://devxnsh1.github.io/demoamazon/
 
-## 💻 GitHub Repository
+## GitHub Repository
 https://github.com/Devxnsh1/demoamazon
 
 ##  Tech Stack
